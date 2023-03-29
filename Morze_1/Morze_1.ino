@@ -17,24 +17,21 @@ void fDASH(){ //функция тире
   digitalWrite(ledPin, LOW);
   delay(PAUSE);
 }
-void fPAUSE(){
+void fPAUSE(){ // функция паузы
   delay(PAUSE_MIN);
 }
 void setup() {
-pinMode(ledPin, OUTPUT);
+pinMode(ledPin, OUTPUT); // определяем пин светодиода
 }
 
 void loop() {
-fDOT(); fDASH(); fDASH(); fDOT(); //П
-fPAUSE();
-fDOT();fDASH();fDOT(); //Р
-fPAUSE();
-fDOT(); fDOT(); //И
-fPAUSE();
-fDOT();fDASH();fDASH(); //В
-fPAUSE();
-fDOT();//Е
-fPAUSE();
-fDOT();//Т
-delay(10000);
+fDOT(); fDASH(); fDASH(); fDOT(); fPAUSE();// П
+fDOT(); fDASH(); fDOT(); fPAUSE();// Р
+fDOT(); fDASH(); fDASH();  fPAUSE(); // В
+fDOT(); fPAUSE();// Е/Ё
+fDASH(); fPAUSE();// Т
+fDASH(); fDASH(); fPAUSE();// М
+fDOT(); fDOT(); fPAUSE();// И
+fDOT(); fDASH(); fDOT(); fPAUSE();// Р
+delay(10000); // пауза для перезапуска
 }
