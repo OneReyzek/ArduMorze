@@ -4,7 +4,7 @@
 *Я создал этот проект для обучения программирования Arduino (C++) для своего сына.*
 
 #### Используется: 
-	1.  [Arduino IDE](https://www.arduino.cc/en/software)
+	1. [Arduino IDE](https://www.arduino.cc/en/software)
 	2. Плата Arduino Nano
 	3. Светодиод(по желанию)
 	4. Кнопка (3шт, по желанию)
